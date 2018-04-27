@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+    <title>CSS Animation</title>
+<style>
+
+    body{
+        margin: 0;
+        padding: 0;
+    }
+
+    .cover{
+        height: 100vh;
+        background: linear-gradient(to top left,
+            #f80c3f 25%,
+            #0dee1c 50%
+            #f1cf10 75%,
+            #0dd7f1 100%
+        );
+        background-size: 600%;
+        animation: LinearEffect 40s ease-in-out;
+        animation-iteration-count: infinite;
+
+
+    }
+    @keyframes LinearEffect {
+        0% {
+            background-position: 0% 50%;
+        }
+        25%{
+            background-position: 100% 50%;
+        }
+        50%{
+            background-position: 0% 50%;
+        }
+        75%{
+            background-position: 100% 50%;
+        }
+        100%{
+            background-position: 0% 50%;
+        }
+    }
+   
+
+
+</style>
+</head>
+<body>
+
+<div class="cover">
+</div>
+</body>
+
+
+</html>
